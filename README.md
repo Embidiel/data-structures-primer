@@ -57,9 +57,37 @@ Paano naman kung walang contiguous memory slots na free. Basically maghahanap la
 
 ![enter image description here](https://i.imgur.com/07wafwr.png)
 
-Paano kung may array tayo or a list of numbers na need i-store? So ganun parin yung concept. Example we declared int nums = [1,2,3],
-maghahanap parin yung computer natin ng contiguous free memory slots to store yung mga numbers na yan.
+***Paano kung may array tayo or a list of numbers na need i-store?*** So ganun parin yung concept. Example we declared `int nums = [1,2,3]`,
+maghahanap parin yung computer natin ng ***contiguous free memory slots*** to store yung mga numbers na yan.
 
 ![enter image description here](https://i.imgur.com/pSukWZG.png)
 
-20:52
+Pwede rin tayo mag store sa isang memory slot ng isang address ng isa pang memory slot. Tinatawag itong ***pointers***. Instead na i-store natin yung data sa memory slot na napili natin pwede nalang i-store natin yung address nung memory slot sa data na gusto natin.
+
+![enter image description here](https://i.imgur.com/JK1JLhE.png)
+ 
+Take note lang na, yung mga ganitong process sa memory, behind the scenes sa PC natin, napakabilis lang mangyari. ***Imagine mo nalang na may direct access yung computer natin sa bawat memory slots.***
+
+---
+
+## Big O Notation
+
+![enter image description here](https://miro.medium.com/max/900/1*FKql5rhPdskhNAFV2D0RUQ.jpeg)
+
+Eto yung ginagamit na ***measurement para malaman natin kung gaano ba kabilis o kabagal ang isang algorithm at kung paano ba siya nag ii-scale.***
+
+Lets say gusto nating maghanap sa isang mahabang listahan ng mga libro like 1 million  records ng book title. Well maraming algorithms para sa pagse-search ng isang item, diferent levels ng complexity, yung iba mas mabilis kumpara sa ibang algorithms.
+
+Ngayon ang tanong kung paano natin ma memeasure yung performance at complexity ng mga to?
+
+***Forms of Big O Notation:***
+
+ - O (1)
+ - O (log n)
+ - O (n)
+ - O (n log n)
+ - O (n ^ 2)
+ - O (2 ^ n)
+ - O (n!)
+
+
