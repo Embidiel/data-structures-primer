@@ -128,3 +128,11 @@ Third step, cut 4 / 2 = 2. 2nd element is 3 na nasa middle pointer natin.
 
 Simple logarithmic loop na base 2 ang gamit. N is 8. log(8) = 3 or
 2 * 2 * 2 = 8.
+
+---
+
+### O (n) or Linear Time
+
+Sinasabi dito na ***habang tumataas yung number of inputs mo ganun din yung bilang or execution time ng algorithm mo.***
+
+![enter image description here](https://i.imgur.com/Eao4jaN.png)
