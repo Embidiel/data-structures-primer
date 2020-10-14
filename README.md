@@ -74,11 +74,15 @@ Take note lang na, yung mga ganitong process sa memory, behind the scenes sa PC 
 
 ![enter image description here](https://mattjmatthias.co/content/images/big-o-chart.png)
 
+
+
 Eto yung ginagamit na ***measurement para malaman natin kung gaano ba kabilis o kabagal ang isang algorithm at kung paano ba siya nag ii-scale.***
 
 Lets say gusto nating maghanap sa isang mahabang listahan ng mga libro like 1 million  records ng book title. Well maraming algorithms para sa pagse-search ng isang item, diferent levels ng complexity, yung iba mas mabilis kumpara sa ibang algorithms.
 
 Ngayon ang tanong kung paano natin ma memeasure yung performance at complexity ng mga to?
+
+![enter image description here](https://introcs.cs.princeton.edu/java/41analysis/images/order-of-growth.png)
 
 ***Forms of Big O Notation:***
 
@@ -135,4 +139,25 @@ Simple logarithmic loop na base 2 ang gamit. N is 8. log(8) = 3 or
 
 Sinasabi dito na ***habang tumataas yung number of inputs mo ganun din yung bilang or execution time ng algorithm mo.***
 
+For example, ***if every item na nasa listahan takes 10 seconds to load or mag pop up sa console.log ibig sabihin merong 40 seconds na execution time itong function mo.***
+
 ![enter image description here](https://i.imgur.com/Eao4jaN.png)
+
+
+---
+
+### O (n log n) or Linearithmic Time / Log-Linear Time 
+
+Eto naman parang combination ng O(n) at O(log n) time complexity. ***Kaya naging n log n kasi n multiply by log n***. In math, sabihin na yung n natin is 8, our log n shall be 3 because `2 x 2 x 2 = 8`. Tapos 8 multiply by 3 = 24. ***Possible na 24 seconds yung execution time nung magiging algorithm natin.***
+
+***Example #1***
+
+Take as an example natin itong ***Merge Sort algorithm***.
+
+![enter image description here](https://imgur.com/xJk7zEm.png)
+
+Breakdown muna natin yung code sa taas. Sa loob ng `merge` na function, ***ilang beses dadaan yung while loop sa loob ng array? Hanggat may laman yung array, it means linear time or n.***
+
+Punta naman tayo sa `mergeSort` na function, mapapansin natin dito is ***hinati niya yung 1 array into 2 separate arrays. Similar sa pattern ng binary search which is nag ce-create ng pivot or middle element.***
+
+Tapos take note gumagamit siya ng recursion dito para ma accomplish yung, ***Logarithmic time or log n***.
