@@ -74,7 +74,7 @@ Take note lang na, yung mga ganitong process sa memory, behind the scenes sa PC 
 
 ![enter image description here](https://mattjmatthias.co/content/images/big-o-chart.png)
 
-
+![enter image description here](https://adrianmejia.com/images/big-o-running-time-complexity.png)
 
 Eto yung ginagamit na ***measurement para malaman natin kung gaano ba kabilis o kabagal ang isang algorithm at kung paano ba siya nag ii-scale.***
 
@@ -171,3 +171,12 @@ Dito naman ***yung execution time natin is directly proportional to the squared 
 
 ![enter image description here](https://imgur.com/RAue6Yq.png)
 
+---
+### O (2 ^ n) or Exponential Time (Base 2)
+
+It means that our execution time depends sa pa grow ng input natin in doubled. ***For example, our n is 4. 2 ^ 4 is 2 x 2 x 2 x 2 is 16.*** 
+
+Example #1
+Basic example neto is a fibonacci function.
+
+![enter image description here](https://imgur.com/SrFiAa8.png)
