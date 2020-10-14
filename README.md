@@ -161,3 +161,13 @@ Breakdown muna natin yung code sa taas. Sa loob ng `merge` na function, ***ilang
 Punta naman tayo sa `mergeSort` na function, mapapansin natin dito is ***hinati niya yung 1 array into 2 separate arrays. Similar sa pattern ng binary search which is nag ce-create ng pivot or middle element.***
 
 Tapos take note gumagamit siya ng recursion dito para ma accomplish yung, ***Logarithmic time or log n***.
+
+---
+
+### O (n ^ 2) or Quadratic Time
+
+Dito naman ***yung execution time natin is directly proportional to the squared size of the input***. For example n natin is 2, 2 ^ 2 = 4 seconds,
+4 ^ 2 = 16 seconds. ***Pinakabasic framework ng time complexity na to is a nested loop.***
+
+![enter image description here](https://imgur.com/RAue6Yq.png)
+
