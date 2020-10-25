@@ -220,3 +220,13 @@ memory slot tapos add the memory address or position of the first element.
 
 ***19 yung memory slot address kung saan naka store yung index 2***. 
 0 (1) Constant time.
+
+![enter image description here](https://imgur.com/1NJCEEX.png)
+
+***Dynamic Arrays*** naman, pag nag declare ng isang dynamic array meron palaging sobrang space so maganda to kapag gusto mo mag insert pa ng ibang elements.
+
+Example gusto mo mag store ng 2 integers, sa dynamic array maglalaan pa ng extra space depende sa number of elements na dineclare mo. For this example magiging 4.
+
+Pag napuno naman yung dynamic array same procedure lang sa static array, just copy all the elements papunta sa free contiguous space na available sa memory tapos magdagdag ulit ng space depende sa number of elements.
+
+Tapos copying ifre-free up na yung previous memory slots na nagamit.
