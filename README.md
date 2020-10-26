@@ -195,7 +195,7 @@ Pinaka basic or yung pinakastarting sa lahat ng Data Structures.
 ***Static array***, kung nagsimula ka sa Java or C++ background malamang nagamit mo na or narinig mo na tong term na to.
 *Static is parang sinasabi natin sa computer natin na kailangan natin ng 3 free spaces para mag store ng 3 integers*
 
-Example = int arr[3]
+Example = `int arr[3]`
 
 Gagawin ng computer ***maghahanap yan ng 3 free contiguous spaces to store yung 3 integers natin***. Assuming na
 64 bit yung pag store per integer or 8 bytes. ***So 8x3 = 24. 24 Bytes free continuous space.***
@@ -203,7 +203,7 @@ Gagawin ng computer ***maghahanap yan ng 3 free contiguous spaces to store yung 
 ***Lets talk about access naman, commonly ganito ginagawa natin [1] or access by index***. Under the hood pano ba yan
 hina-handle ng computer natin?
 
-Example = console.log(arr[2]).
+Example = `console.log(arr[2]).`
 
 ***Sa ganyang scenario, alam na ng computer natin kung ano yung starting memory position kung saan siya nagsimula mag
 declare ng integers sa memory slots***. Sa example sa picture, sa Memory Address 3 so kung isang integer mag take-up
@@ -213,20 +213,23 @@ ng 8 bytes.
 3 + 8 = 11, Second Integer
 11 + 8 = 19, Third Integer
 
-Ginagawa ng computer, given the index na gusto mong i-access tapos multiply by the bytes na tine-takeup ng isang
-memory slot tapos add the memory address or position of the first element.
+Ginagawa ng computer, ***given the index na gusto mong i-access tapos multiply by the bytes na tine-takeup ng isang
+memory slot tapos add the memory address or position of the first element.***
 
-***8 x 2 = 16 + 3 = 19, Third integer.***
+***8 x 2 = 16 + 3 = `19`, Third integer.***
 
 ***19 yung memory slot address kung saan naka store yung index 2***. 
-0 (1) Constant time.
+***Time Complexity*** : `0 (1)` Constant time.
 
 ![enter image description here](https://imgur.com/1NJCEEX.png)
 
 ***Dynamic Arrays*** naman, pag nag declare ng isang dynamic array meron palaging sobrang space so maganda to kapag gusto mo mag insert pa ng ibang elements.
 
-Example gusto mo mag store ng 2 integers, sa dynamic array maglalaan pa ng extra space depende sa number of elements na dineclare mo. For this example magiging 4.
+Example gusto mo mag store ng 2 integers, ***sa dynamic array maglalaan pa ng extra space depende sa number of elements na dineclare mo***. For this example magiging 4.
 
-Pag napuno naman yung dynamic array same procedure lang sa static array, just copy all the elements papunta sa free contiguous space na available sa memory tapos magdagdag ulit ng space depende sa number of elements.
+Pag napuno naman yung dynamic array same procedure lang sa static array, ***just copy all the elements papunta sa free contiguous space na available sa memory tapos magdagdag ulit ng space depende sa number of elements.***
 
-Tapos copying ifre-free up na yung previous memory slots na nagamit.
+***Pagtapos ng copying, ifre-free up na yung previous memory slots na nagamit.***
+
+Under the hood, ***Javascript & Python yung mga famous programming languages na gumagamit nito***.
+
