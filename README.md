@@ -233,3 +233,46 @@ Pag napuno naman yung dynamic array same procedure lang sa static array, ***just
 
 Under the hood, ***Javascript & Python yung mga famous programming languages na gumagamit nito***.
 
+## Linked List
+
+![enter image description here](https://imgur.com/bo5eVxL.png)
+
+Almost similar sa Array.
+
+Ang key difference between sa Arraya at Linked List ay:
+
+- Sa Array kailangan pag nag declare ka for example ng [1,2,3], kailangan sa loob ng memory canvas 
+meron dapat na 3 free contiguous memory slots (Sinabi ko lang na 3 for simplicity's sake lol).
+
+- Sa Linked List naman kahit hiwa-hiwalay yung pag store mo ng 3 different integers na yan. For example sa picture,
+Si memory slot address 1 ay occupied na, pero si memory slot address 2 ay vacant tapos si memory slot 3 ay occupied.
+
+Pwedeng i-store mo nalang sa free addresses na 2 or so on. Basically kahit saan mo ipwesto basta free yung memory slot.
+Tapos i-coconnect nalang yan using the concept of pointers (pointing to another memory's address).
+
+Note lang yung memory addresses na 1,2,3 dito ay for simplicity lang. In reality binary numbers yang addresses na yan.
+
+Sa Linked Lists din may concept ng nodes, so bawat value na i-dedeclare mo for example 3, Naka store yan sa isang node.
+
+Lets talk about the most common operations na ginagawa sa isang Linked List:
+
+![enter image description here](https://imgur.com/1x6aqXy.png)
+
+1.) Get
+Sa operation na get, different siya sa behavior ni Array kasi sa Array diba meron tayong concept ng index.
+Example : arr[1] = 2.
+
+So basically instant yung pagkuha ng value, O(1) Constant Time. Kasi kunin mo lang yung starting memory address
+nung array tapos number of memory slots (assuming na 64 bit = 8 bytes) multiply by the given index, and then pag
+add mo lang sa starting memory address and boom kuha mo na yung value na gusto mo.
+
+Sa Linked List medyo complicated lang, kasi para magretrieve ng value ang pinaka-reference mo ay yung head.
+Tapos wala ka namang way to calculate the location nung gusto mong value na ma-retrieve e, kasi di sila dikit 
+dikit sa memory canvas pwedeng kalat kalat sila.
+
+
+![enter image description here](https://imgur.com/U5fulaC.png)
+
+2.) Insertion
+20:33
+
