@@ -264,6 +264,7 @@ Lets talk about the ***most common operations*** na ginagawa sa isang Linked Lis
 ![enter image description here](https://imgur.com/1x6aqXy.png)
 
 1.) ***Get***
+
 Sa operation na get, ***different siya sa behavior ni Array kasi sa Array diba meron tayong concept ng index.***
 Example : `arr[1] = 2.`
 
@@ -284,5 +285,6 @@ So ***it will take O(n) or Linear Time starting from the head*** kung gusto mo m
 ![enter image description here](https://imgur.com/U5fulaC.png)
 
 2.) Insertion
+
 20:33
 
