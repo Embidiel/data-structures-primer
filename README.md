@@ -363,4 +363,67 @@ Isa pang type is a ***Circular Linked List***.
 ***Tapos si tail naman meron ding pointer papunta sa head.***
 
 
+---
+## Hash Tables / Hash Map
+
+Isa rin sa mga commonly used na Data Structures. 
+***It allows us to store values*** in a `key-value pair` format. 
+***Every key may corresponding na value.***
+
+Sa mga famous programming languages katulad ng Javascript at Python ay implemented na ito easily or built-in na.
+
+***Javascript (Regular Object)*** 
+***Example:*** `const dog = {nose: 1};`
+***Python (Dictionary)***
+***Example:*** `dog = {nose : 1};`
+
+Pwede rin natin itong i-tulad sa array kasi sa array may concept ng index for lookups. 
+Counterpart niya sa Hash Map ay isang `key`. 
+***So O(1) din ang pag get ng value nito.***
+
+Under the hood medyo complicated ang pag gawa nito.
+***Ang isang Hash Table ay built on top of arrays.*** 
+
+***Every key na pinapasok natin sa isang hash table ay
+napupunta sa isang*** `Hash function`.
+
+***Basically yung isang hash function ay kino-convert niya yung isang key which is a string, into an integer.***
+
+Tapos ***yung integer na to ay yung nagiging index sa array*** kung saan natin ilalapag yung value na partnered doon sa isang key.
+
+![enter image description here](https://imgur.com/23GQLa5.png)
+
+Check example image above.
+
+***So is it possible ba na yung isang key tapos another key magkaroon ng same integer result pagkadaan sa isang hash function?***
+Yes possible. Ang tawag diyan ay isang `collision`.
+
+Sa ganyang setup ***bawat isang slot sa array ay mag po-point sa isang Linked List.***
+
+Ibig sabihin nito ***average scenario na yung O(1)*** ***or Constant time for get / lookup.***
+
+![enter image description here](https://imgur.com/YrQ7tGq.png)
+
+Pero ***ang worst case is kapag nagkaroon ng multiple collisions*** ito ay ***magiging O(n) or Linear Time.***
+
+
+***Paano naman kapag ang dami mo ng keys na initialize pero limited pala yung length nung array?***
+
+***Pwede nating gamitin yung concept ng Dynamic Arrays*** at magkaroon ng `resizing`.
+
+Parang yung flow is ***every time na nasa limit na yung array or puno na*** ***just copy lahat ng laman ng array na yun which are mga linked lists.***
+
+![enter image description here](https://imgur.com/Zz1Skhk.png)
+
+***Tapos ipasok siya sa new array na doubled in size***. 
+
+***Tapos every key ulit na declared sa Hash Map ay papasok
+ulit sa*** `hash function` and ***then every values mama-map na sa corresponding index sa new array.***
+
+Kasi kapag di natin ginawa tong resizing ***it's very possible na lumaki lang yung mga linked list natin at magkaroon ng multiple collisions.***
+
+Regarding hash functions marami ng magagaling na programmer na nag implement ng hash function katulad sa Javascript 
+so medyo di na natin kailangan problemahin yan. 
+
+Important lang na nalaman natin.
 
