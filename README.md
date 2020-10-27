@@ -266,6 +266,7 @@ Lets talk about the ***most common operations*** na ginagawa sa isang Linked Lis
 1.) ***Get***
 
 Sa operation na get, ***different siya sa behavior ni Array kasi sa Array diba meron tayong concept ng index.***
+
 Example : `arr[1] = 2.`
 
 So basically ***instant yung pagkuha ng value, O(1) Constant Time***. 
@@ -278,13 +279,88 @@ add mo lang sa starting memory address*** and boom kuha mo na yung value na gust
 ***Sa Linked List medyo complicated lang***, kasi para magretrieve ng value ang pinaka-reference mo ay yung head.
 Tapos ***wala ka namang way to calculate the location nung gusto mong value na ma-retrieve e, kasi di sila dikit-dikit sa memory canvas pwedeng kalat kalat sila.***
 
-So ***it will take O(n) or Linear Time starting from the head*** kung gusto mo mag get ng value. ***Best case O(1)*** kung nasa head yung value.
+So ***it will take O(n) or Linear Time starting from the head*** kung gusto mo mag get ng value.
+
+ ***Best case O(1)*** kung nasa head yung value.
 
 ---
 
 ![enter image description here](https://imgur.com/U5fulaC.png)
 
-2.) Insertion
+2.) ***Insertion***
 
-20:33
+So kung sa ***behavior ng isang array kailangan natin mag shift ng elements by one position to the right***
+kung gusto natin magpasok ng ***isang bagong element sa start ng array.***
+
+Sa ***Linked List*** need lang natin ***mag create ng new node***. 
+For example gusto natin ng 5 as a new value, ***gawa lang tayo ng
+new node na laman ay 5 yung 5 na yun ayun na yung bagong head ng Linked List***. 
+
+Tapos yung node na may value na 5, ***mag po-point sa old node or head na may value na 3.***
+
+***Time complexity is O(1)*** kasi ***gumawa lang naman tayo ng bagong node at ginawa nating head, walang elements shifting 
+na naganap.***
+
+Paano naman kung gusto natin ***mag pasok ng new value sa gitna ng Linked List?*** 
+
+Unfortunately, ***kailangan natin mag start sa head ng Linked List***.
+
+ So sa example sa picture, lets start sa head node na may value na 5.
+
+***From that node need natin daanan yung ibang nodes hanggang sa node na kung saan natin gustong mag insert ng value.***
+
+Example lang gusto ko pagtapos ng node na may value na 1 magpasok. 
+
+Head node w/ value 5 to node value 1. 
+***After ng traversal na yan, mag insert na ako ng new node na may value na 6.*** 
+
+Si node value 1 ***ang gagawin ko is ipo-point siya papunta sa new node value 6.***
+Si new node value 6 naman, ***ipo-point ko siya sa previously pino-point ni node value 1, which is si node value 4.***
+
+***Time complexity is O(n) or Linear Time*** for searching / traversal to kung saan natin gustong place magpasok sa Linked List.
+
+***Pero yung mismong insertion is O(1) or Constant Time kasi we just need to point to another node.***
+
+***Kung sa tail or end node naman.*** 
+
+For example node value 2, ***si node value 2 nag po-point yan sa isang memory slot na may null value.*** 
+
+So ***we just need to replace the null value with a new node na may value for example dito is 7.***
+
+Insertion is ***generally depende sa implementation mo kung paano ka mag-insert ng value.***
+
+***Yung ibang implementation ng Linked List may reference sa tail node.*** Tapos kung gusto mo mag insert sa tail or end node, ***just create a new node then point yung tail sa new node***.
+
+ ***So it's just constant time or O(1).***
+
+Pero ***kung wala kang reference or variable sa tail,*** ***pwedeng maging linear time kasi need mo mag start sa head.***
+
+---
+
+***Types of Linked List***
+
+Merong ***3 types of Linked List***. 
+
+Itong diniscuss ko dito ay isang ***Singly Linked List.***
+
+Sa ***Singly Linked List meron lang isang pointer as you can see sa picture.*** 
+Another node points to another node.
+Kung sa code tinatawag tong `next` na property.
+
+Second type is a ***Doubly Linked List***, enhanced version ni Singly Linked List. 
+
+![Example of Doubly Linked List](https://imgur.com/9Uydd4C.png)
+
+Meron kang ***2 pointers sa isang node***. The `previous` and `next` properties.
+
+Si ***head naka point yung previous / prev pointer sa isang null value.***
+Si ***tail naka point yung next pointer sa isang null value.***
+
+Isa pang type is a ***Circular Linked List***. 
+
+***Meron lang pointer si head node papunta sa tail***. 
+
+***Tapos si tail naman meron ding pointer papunta sa head.***
+
+
 
