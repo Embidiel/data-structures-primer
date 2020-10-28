@@ -366,23 +366,29 @@ Isa pang type is a ***Circular Linked List***.
 ---
 ## Hash Tables / Hash Map
 
-Isa rin sa mga commonly used na Data Structures. 
+Isa rin sa mga commonly used na Data Structures. 	
+
 ***It allows us to store values*** in a `key-value pair` format. 
+
 ***Every key may corresponding na value.***
 
 Sa mga famous programming languages katulad ng Javascript at Python ay implemented na ito easily or built-in na.
 
 ***Javascript (Regular Object)*** 
+
 ***Example:*** `const dog = {nose: 1};`
+
 ***Python (Dictionary)***
+
 ***Example:*** `dog = {nose : 1};`
 
 Pwede rin natin itong i-tulad sa array kasi sa array may concept ng index for lookups. 
+
 Counterpart niya sa Hash Map ay isang `key`. 
 ***So O(1) din ang pag get ng value nito.***
 
 Under the hood medyo complicated ang pag gawa nito.
-***Ang isang Hash Table ay built on top of arrays.*** 
+Ang isang Hash Table ay ***built on top of arrays.*** 
 
 ***Every key na pinapasok natin sa isang hash table ay
 napupunta sa isang*** `Hash function`.
@@ -396,6 +402,7 @@ Tapos ***yung integer na to ay yung nagiging index sa array*** kung saan natin i
 Check example image above.
 
 ***So is it possible ba na yung isang key tapos another key magkaroon ng same integer result pagkadaan sa isang hash function?***
+
 Yes possible. Ang tawag diyan ay isang `collision`.
 
 Sa ganyang setup ***bawat isang slot sa array ay mag po-point sa isang Linked List.***
