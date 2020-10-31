@@ -434,3 +434,35 @@ so medyo di na natin kailangan problemahin yan.
 
 Important lang na nalaman natin.
 
+## Stacks & Queues
+
+Itong dalawang data structures na to ay easy to grasp or understand even implementation ay madali rin.
+
+Ang ***Stack*** ay ***isang LIFO or Last In First Out na Data Structure.***
+Ibig sabihin kung sinong huling pumasok, siya yung unang makakalabas.
+
+Real world example ay ***stack ng books, kung sinong nasa itaas yun yung kukunin natin.***
+
+Sa ***Queue*** naman ay ***FIFO or First In First Out***. ***Kung sinong unang pumasok siya ang unang makakalabas.***
+
+Real world example ay ***pagpila sa sinehan. Kung sinong unang makabili sa cashier ng ticket siya yung unang makakalabas sa pila.***
+
+May kaibahan ng implementation si Stack at Queue.
+
+Si ***Stack ay implemented gamit ang Arrays.*** 
+Si ***Queue naman ay built on top of Linked List.***
+
+So bakit ganito ang way ng pagbuo sa kanila?
+
+Since ***Stack*** is a Last In First Out type, ***mas convenient in terms of time kung Array ang gagamitin since sa last element lang naman tayo nagtatanggal ng item (`pop`).***
+
+Compared sa ***Queue*** na ***sa unahan tayo nagtatanggal ng item (`dequeue`).*** ***Kung Array ang gagamitin sa Queue kailangan pa natin i-shift yung bawat items sa array papunta sa kaliwa kung saan natanggal yung first element.***  Which takes O(n) time.
+
+Kung ***Linked List implementation pwedeng direkta na natin tanggalin yung head tapos ipalit natin yung next na node na naka point sa previous na head.*** . Eto O (1) time lang.
+
+
+
+![enter image description here](https://imgur.com/eJcdzEN.png)
+
+
+
