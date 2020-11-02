@@ -499,3 +499,61 @@ and so on...
 
 ![enter image description here](https://imgur.com/4UPJZhu.png)
 
+Graph
+
+Medyo maraming naiintimidate kapag pinaguusapan na yung concept ng Graphs.
+
+Pero in reality ang Graph ay isa lang collection of nodes na pwedeng makaka-connect or hindi sa isat isa.
+
+Sa Linked List nodes yung term na ginagamit pero sa isang Graph.
+Vertex or Vertices ang tawag sa isang node. Tapos yung connection between sa nodes naman ay Edges.
+
+Maraming types ng Graphs pero ang importante lang is malaman natin yung key concepts or things na 
+properties kapag nakikita natin ang Graph.
+
+Kung makikita niyo na yung Vertex 6 at 3 ay hindi connected sa ibang mga vertices sa Graph.
+Etong graph na to ay Disconnected Graph.
+
+In real life pwedeng yung vertices ay isang locations sa isang bansa tapos yung edges ay parang
+transportation channels. Yung vertex 3 pwede nating sabihin na space base siya na di siya accessible sa public
+transportaion channels at yung vertex 6 naman pwedeng moon kung example.
+
+Kung mapapansin niyo rin sa sample na to yung edges ay may arrows. Isa rin tong type of Directed Graph
+ibig sabihin for example Vertex 1 at Vertex 2.
+
+Kung galing ka ng Vertex 1 pwede ka pumunta ng Vertex 2 pero kung galing ka ng Vertex 2 di ka pwede sa Vertex 1.
+Real world example is kunwari yung bahay niyo si Vertex 1 tapos Vertex 2 is SM North tapos yung edge
+one way na daanan lang para sa mga sasakyan haha.
+
+Pag Undirected Graph naman pwedeng two way tapos walang arrow yung edge.
+Example sa facebook. Ikaw si Vertex 1 tapos friend mo si IU na Vertex 2 kapag friends kayo ibig sabihin may two
+way relationship or walang arrow yung edge.
+
+Isa pang concept sa Graph Theory ay yung Cycles. Kapag sinearch mo kay Google mejo complicated lalabas.
+Pero in simple terms kapag may nakita kayo na 3 or more vertices na parang nag infinite loop or nagkaka connect
+sa isa't isa then may Cycle ka.
+
+Example dito sa picture:
+Vertex 2 -> Vertex  5 -> Vertex 7 -> Vertex 2 ulit.
+
+Real life dito is pwedeng Wikipedia.
+Sa Wikipedia pag nag visit ka ng page pwedeng yung page na yun may link to another page.
+Tapos yung another page na yun, pwede rin mag link to another page.
+Tapos yung another page (2) pwedeng mag link or magreference sa una mong binisita haha.
+
+Cyclic Graph.
+
+Pero syempre gusto natin maiwasan minsan yung pag cycle or infinite loop sa Graph.
+One way nito yung pag mark as visited sa isang Vertex.
+
+In terms of programming or code sa Graph. 
+Typically nire-represent natin to as an Adjacency List.
+
+Parang ii-store mo lang yung nodes into a list.
+For example pwede sa Hash Map tapos every key sa isang Hash Map ay value nung bawat Node or Vertex.
+
+Tapos every node nag iistore ng list ng mga edges or adjacency.
+
+Kunwari dito Node / Vertex 1.
+Ii-store niya yung Node 2,  Node 8, Node 4 and 9.
+
