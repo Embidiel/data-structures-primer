@@ -495,3 +495,7 @@ and so on...
 
 ***Kung di naman sakop ng alphabet kunwari chinese characters pwedeng ibang encoding or mapping yung gawin.***
 
+## Graph
+
+![enter image description here](https://imgur.com/4UPJZhu.png)
+
