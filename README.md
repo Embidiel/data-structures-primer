@@ -456,13 +456,42 @@ So bakit ganito ang way ng pagbuo sa kanila?
 
 Since ***Stack*** is a Last In First Out type, ***mas convenient in terms of time kung Array ang gagamitin since sa last element lang naman tayo nagtatanggal ng item (`pop`).***
 
-Compared sa ***Queue*** na ***sa unahan tayo nagtatanggal ng item (`dequeue`).*** ***Kung Array ang gagamitin sa Queue kailangan pa natin i-shift yung bawat items sa array papunta sa kaliwa kung saan natanggal yung first element.***  Which takes O(n) time.
+Compared sa ***Queue*** na ***sa unahan tayo nagtatanggal ng item (`dequeue`).*** ***Kung Array ang gagamitin sa Queue kailangan pa natin i-shift yung bawat items sa array papunta sa kaliwa kung saan natanggal yung first element.***  
 
-Kung ***Linked List implementation pwedeng direkta na natin tanggalin yung head tapos ipalit natin yung next na node na naka point sa previous na head.*** . Eto O (1) time lang.
+Which takes `O(n)` time.
+
+Kung ***Linked List implementation pwedeng direkta na natin tanggalin yung head tapos ipalit natin yung next na node na naka point sa previous na head.*** . 
+
+Eto `O (1)` time lang.
 
 
 
 ![enter image description here](https://imgur.com/eJcdzEN.png)
 
 
+## Strings
+
+![enter image description here](https://imgur.com/Hc95eSS.png)
+
+Ang isang ***String*** ay isang collection of characters. 
+
+Ang ***implementation ng isang String ay depende rin sa Programming language.***
+
+Sa PLs tulad ng J***avascript at Python, immutable ang isang String ibig
+sabihin kapag gusto mo mag append sa isang string.***
+
+***Under the hood gumagawa yan ng panibagong array tapos kina copy
+yung previous string sa new string na gusto mo i-append.***
+
+Sa PL tulad ng ***C++ mutable ang isang string. Example string na "abc" tapos gusto mo palitan yung c ng f pwedeng constant time yan.***
+
+Ang string ay built using arrays where every character is mapped into 
+an integer. Pinaka example niyan ay ASCII.
+
+    a = 65
+    b = 66 
+
+and so on...
+
+***Kung di naman sakop ng alphabet kunwari chinese characters pwedeng ibang encoding or mapping yung gawin.***
 
