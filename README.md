@@ -576,3 +576,48 @@ For example ***pwede sa Hash Map tapos every key sa isang Hash Map ay value nung
 Kunwari dito Node / Vertex 1.
 Ii-store niya yung Node 2,  Node 8, Node 4 and 9.
 
+## Trees
+
+![enter image description here](https://imgur.com/dcrFXGx.png)
+
+
+Isa tong type of Graph na ***rooted***.
+
+ Meaning ko ng rooted is ***meron siyang root node palagi.***
+
+Dito sa example natin ***10 ang Root Node.***
+
+Ang isang tree rin ay pwedeng magkaroon ng `child nodes`. 
+***Si 10 may child node na 2 at -31.***
+
+Si 2 may child nodes na 51 at 7 and etc....
+
+Ang tree rin ay may ***Directed Structure na palaging downwards 
+ang edges or direction.***
+
+Ang isang Tree rin ay ***Acyclic so walang cycles or loop na mangyayari sa mga nodes.***
+
+Ang isang ***node sa Tree rin ay*** ***pwede lang magkaroon ng isang parent sa loob.***
+
+Ang Tree rin ay ***hindi pwedeng magkaroon ng disconnection sa loob kung magkakaroon man ay Graph na ang tawag doon.***
+
+Most common ng Tree ay ***Binary Tree*** na kung saan at ***most ang isang node ay pwedeng magkaroon ng 2 children (at most).***
+
+Pwede ring magkaroon ng Ternary Tree. 
+***For simplicity purposes pwede rin natin tong i-implement as K-ary Tree.
+In respect of the number of children na pwede sa isang node.***
+
+***Terms:***
+`Root` - Node sa pinakataas.
+`Edge` - Connection or link between two nodes.
+`Child` - Node na may parent.
+`Parent` - Node na may edge sa Child node.
+`Leaf` - Node/s sa pinakadulo ng tree na walang child.
+`Height` - Longest path papunta sa isang leaf.
+`Depth` - Length of path ng isang node papunta sa Root node.
+
+
+
+***Perfect Tree Example:***
+
+![enter image description here](https://imgur.com/NE1IBzx.png)
