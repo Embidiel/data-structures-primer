@@ -608,13 +608,14 @@ Pwede ring magkaroon ng Ternary Tree.
 In respect of the number of children na pwede sa isang node.***
 
 ***Terms:***
-`Root` - Node sa pinakataas.
-`Edge` - Connection or link between two nodes.
-`Child` - Node na may parent.
-`Parent` - Node na may edge sa Child node.
-`Leaf` - Node/s sa pinakadulo ng tree na walang child.
-`Height` - Longest path papunta sa isang leaf.
-`Depth` - Length of path ng isang node papunta sa Root node.
+
+ - `Root` - Node sa pinakataas.
+ - `Edge` - Connection or link between two nodes.
+- `Child` - Node na may parent.
+- `Parent` - Node na may edge sa `Child` node.
+- `Leaf` - Node/s sa pinakadulo ng tree na walang child.
+- `Height` - Longest path papunta sa isang leaf.
+- `Depth` - Length of path ng isang node papunta sa `Root` node.
 
 
 
